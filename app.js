@@ -3,7 +3,7 @@ var mongoose=require('mongoose')
 var bodyParser=require('body-parser')
 var methodOverride=require('method-override')
 var app=express()
-var port=process.env.Port||3000
+var port=process.env.Port || 3000
 mongoose.connect("mongodb+srv://sampoo:shampoo999@cluster0.jhylp.mongodb.net/<dbname>?retryWrites=true&w=majority");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -102,7 +102,7 @@ app.delete("/blogs/:id", function(req, res){
     //redirect somewhere
  });
 
-app.listen(port,()=>
+app.listen('port',()=>
 {
     console.log('port has been started')
 })
