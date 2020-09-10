@@ -4,7 +4,7 @@ var bodyParser=require('body-parser')
 var methodOverride=require('method-override')
 var app=express()
 var port=process.env.Port||3000
-mongoose.connect("mongodb://localhost/restful_blog_app");
+mongoose.connect("mongodb+srv://sampoo:shampoo999@cluster0.jhylp.mongodb.net/<dbname>?retryWrites=true&w=majority");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
