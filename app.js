@@ -102,7 +102,7 @@ app.delete("/blogs/:id", function(req, res){
     //redirect somewhere
  });
 
-app.listen('port',()=>
+app.listen(port,()=>
 {
     console.log('port has been started')
 })
